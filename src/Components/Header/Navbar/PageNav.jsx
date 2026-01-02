@@ -60,9 +60,8 @@ const PageNav = ({ className }) => {
               Team One
             </li>
             <li className="whitespace-nowrap  hover:text-primary cursor-pointer">
-            Team Two
+              Team Two
             </li>
-           
           </ul>
         </li>
 
@@ -96,16 +95,16 @@ const PageNav = ({ className }) => {
 
           <ul className="absolute left-67 top-0 bg-white shadow-xl rounded-xs p-5 space-y-3 invisible group-hover/li:visible">
             <li className="whitespace-nowrap  hover:text-primary cursor-pointer">
-        Features - Insurance
+              Features - Insurance
             </li>
             <li className="whitespace-nowrap  hover:text-primary cursor-pointer">
-        Features - Real Estate
+              Features - Real Estate
             </li>
             <li className="whitespace-nowrap  hover:text-primary cursor-pointer">
-        Features - Agency
+              Features - Agency
             </li>
             <li className="whitespace-nowrap  hover:text-primary cursor-pointer">
-        Features - Lead Genaration
+              Features - Lead Genaration
             </li>
           </ul>
         </li>

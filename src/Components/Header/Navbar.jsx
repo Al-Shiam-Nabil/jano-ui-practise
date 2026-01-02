@@ -3,6 +3,9 @@ import Container from "../../Shared/Container";
 import Button from "../../Shared/Button";
 import HomeNav from "./Navbar/HomeNav";
 import PageNav from "./Navbar/PageNav";
+import PortfolioNav from "./Navbar/PortfolioNav";
+import BlogNav from "./Navbar/BlogNav";
+import ContactNav from "./Navbar/ContactNav";
 
 const Navbar = () => {
   return (
@@ -29,9 +32,28 @@ const Navbar = () => {
                 </span>
                 <PageNav className="min-w-75 py-6 pl-6"></PageNav>
               </li>
-              <li>Portfolio</li>
-              <li>Blog</li>
-              <li>Contact</li>
+
+              <li className="relative group  ">
+                <span className="flex items-center group-hover:text-primary  cursor-pointer py-3 text-lg font-semibold">
+                  Portfolio <ChevronDown />
+                </span>
+                <PortfolioNav className="min-w-60 py-6 pl-6"></PortfolioNav>
+              </li>
+
+                    <li className="relative group  ">
+                <span className="flex items-center group-hover:text-primary  cursor-pointer py-3 text-lg font-semibold">
+                  Blog <ChevronDown />
+                </span>
+                <BlogNav className="min-w-60 py-6 pl-6"></BlogNav>
+              </li>
+
+
+                 <li className="relative group  ">
+                <span className="flex items-center group-hover:text-primary  cursor-pointer py-3 text-lg font-semibold">
+                  Contact <ChevronDown />
+                </span>
+                <ContactNav className="min-w-60 py-6 pl-6"></ContactNav>
+              </li>
             </ul>
           </nav>
 
