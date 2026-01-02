@@ -1,4 +1,4 @@
-import { ChevronDown, UserRound } from "lucide-react";
+import { ChevronDown, TextAlignJustify, UserRound } from "lucide-react";
 import Container from "../../Shared/Container";
 import Button from "../../Shared/Button";
 import HomeNav from "./Navbar/HomeNav";
@@ -16,7 +16,7 @@ const Navbar = () => {
           <h3 className="text-4xl font-bold">Jano.</h3>
 
           {/* middle */}
-          <nav>
+          <nav className="hidden lg:block">
             <ul className="flex items-center gap-8">
               <li className="relative group">
                 <span className="flex items-center group-hover:text-primary cursor-pointer py-3 text-lg font-semibold">
@@ -40,15 +40,14 @@ const Navbar = () => {
                 <PortfolioNav className="min-w-60 py-6 pl-6"></PortfolioNav>
               </li>
 
-                    <li className="relative group  ">
+              <li className="relative group  ">
                 <span className="flex items-center group-hover:text-primary  cursor-pointer py-3 text-lg font-semibold">
                   Blog <ChevronDown />
                 </span>
                 <BlogNav className="min-w-60 py-6 pl-6"></BlogNav>
               </li>
 
-
-                 <li className="relative group  ">
+              <li className="relative group  ">
                 <span className="flex items-center group-hover:text-primary  cursor-pointer py-3 text-lg font-semibold">
                   Contact <ChevronDown />
                 </span>
@@ -59,11 +58,18 @@ const Navbar = () => {
 
           {/* right */}
           <div className="flex items-center gap-3">
-            <div className="border border-gray-300 rounded-full  p-3 cursor-pointer group hover:bg-primary hover:border-transparent transition-all duration-300 ease-in-out">
+            <div className="border border-gray-300 rounded-full  p-2.5 cursor-pointer group hover:bg-primary hover:border-transparent transition-all duration-300 ease-in-out">
               <UserRound className="text-primary group-hover:text-white transition-colors duration-300 ease-in-out"></UserRound>
             </div>
 
-            <Button className="rounded-full font-semibold">Contact us</Button>
+            <Button className="hidden lg:block rounded-full font-semibold">Contact us</Button>
+            {/* small screen menubar */}
+            <div className="lg:hidden p-2 text-white bg-primary rounded-lg cursor-pointer w-10 h-10 flex justify-center items-center flex-col gap-1.5 group">
+           
+              <span className="w-6 h-0.5 bg-white block group-hover:rotate-45 group-hover:translate-y-2 transition-all duration-500 ease-in-out"></span>
+              <span className="w-6 h-0.5 bg-white block group-hover:opacity-0 opacity-100 group-hover:translate-x-2 transition-all duration-300  "></span>
+              <span className="w-6 h-0.5 bg-white block group-hover:-rotate-45 group-hover:-translate-y-2 transition-all duration-500 ease-in-out"></span>
+            </div>
           </div>
         </Container>
       </section>
