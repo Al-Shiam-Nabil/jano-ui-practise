@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../../Shared/Container";
-import { ChevronDown } from "lucide-react";
+import { Check, ChevronDown } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -48,6 +48,10 @@ const Hero = () => {
               </button>
             </div>
           </div>
+
+<p className="text-primary mt-30 flex items-center justify-center"> <Check className="w-4 h-4"></Check>
+An UK insurer approved by the UICO.</p>
+
         </div>
       </Container>
     </div>
